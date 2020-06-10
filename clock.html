@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{padding: 0;
+			margin: 0;}
+		.clock{width: 500px;
+			height: 500px;
+			background-color: #44454c;
+			align-items: center;
+			margin: auto;
+			position: relative;
+			border-radius: 50%;
+			    top: 20px;
+		}
+		body{
+			background-color: black;
+		}
+		.one{
+			top: 60px;
+			left: 100px;
+
+		}
+		.one .two .three .four .five .six .seven .eight .nine .ten .eleven .twelve{
+			font-family: sans-serif;
+			font-size: 10px;
+
+		}
+		 .sec{   width: 1px;
+    height: 240px;
+    background: white;
+    z-index: 1;
+    transform-origin: bottom;
+    line-height: 20px;
+    animation-name: second;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    position: relative;
+    left: 251px;
+    top: 7px;
+z-index: 3;}
+    @keyframes second{
+    	from {transform: rotateZ(0deg);}
+    	to{transform: rotateZ(360deg);}
+    }
+    
+.min {
+        width: 3px;
+    height: 230px;
+    background: red;
+    transform-origin: bottom;
+    animation-name: kata;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left: 250.5px;
+    top: -221px;
+    z-index: 2;
+}
+.hour {
+   width: 5px;
+    height: 200px;
+    transform-origin: bottom;
+    background: black;
+    animation-name: kata;
+    animation-duration: 43200s ;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-timing-function: linear;
+    top: -420px;
+    left: 249px;
+    z-index: 1;
+}
+
+@keyframes kata{
+			from{
+				transform: rotateZ(0deg);
+			}
+
+to{
+	transform: rotateZ(360deg);
+}
+}
+
+
+		
+    .one {
+   position: relative;
+    top: -632px;
+    left: 350px;
+    width: 15px;
+    font-family: fantasy;
+    font-size: 30px;}
+  
+
+.two {
+   position: relative;
+    top: -588px;
+    left: 439px;
+    width: 15px;
+    font-family: fantasy;
+    font-size: 30px;}
+  
+
+.three {
+       position: relative;
+    top: -518px;
+    left: 466px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;}
+
+.four {
+    position: relative;
+    top: -432px;
+    left: 440px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;}
+.five {
+      position: relative;
+    top: -393px;
+    left: 360px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;}
+.six {
+   position: relative;
+    top: -396px;
+    left: 255px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;}
+.seven {
+       position: relative;
+    top: -464px;
+    left: 131px;
+    width: 15px;
+    font-family: fantasy;
+    font-size: 30px;}
+
+.eight {
+  position: relative;
+    top: -580px;
+    left: 53px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;}
+.nine {
+  position: relative;
+    top: -725px;
+    left: 13px;
+    width: 15px;
+    font-family: fantasy;
+    font-size: 30px;}
+.ten {
+     position: relative;
+    top: -875px;
+    left: 50px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;}
+.eleven {
+   position: relative;
+    top: -991px;
+    left: 123px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;}
+.twelve {
+          position: relative;
+    top: -1061px;
+    left: 239px;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 15px;
+
+}
+
+
+
+	</style>
+
+</head>
+<body>
+	
+	<div class="clock">
+	<div class="sec"></div>
+	<div class="min"></div>
+	<div class="hour"></div>
+	<div class="one">1</div>
+	<div class="two">2</div>
+	<div class="three">3</div>
+	<div class="four">4</div>
+	<div class="five">5</div>
+	<div class="six">6</div>
+	<div class="seven">7</div>
+	<div class="eight">8</div>
+	<div class="nine">9</div>
+	<div class="ten">10</div>
+	<div class="eleven">11</div>
+	<div class="twelve">12</div>
+</div>
+</body>
+
+</html>
